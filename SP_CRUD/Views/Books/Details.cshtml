@@ -4,27 +4,32 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<div class="card row col-lg-8 mx-auto mt-3">
+    <h1 class=" card-header alert alert-info">Book Details</h1>
+    <div class="card-body mx-4">
+        <div class="row mb-2">
+            <div class="col-2">
+                <b>@Html.DisplayNameFor(model => model.Title) :</b>
+            </div>
+            <div class="col-5">
+                @Html.DisplayFor(model => model.Title)
+            </div>
+        </div>
 
-<div>
-    <h4>Book</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Author)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Author)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.BookId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+        <div class="row mb-2">
+            <div class="col-2">
+                <b>@Html.DisplayNameFor(model => model.Author) :</b>
+            </div>
+            <div class="col-5">
+                @Html.DisplayFor(model => model.Author)
+            </div>
+        </div> 
+    </div>
+    <div class="card-footer">
+        <div class="d-flex justify-content-start">
+            <a asp-action="Index" class="btn btn-link btn-sm text-decoration-none"><i class="fa fa-arrow-circle-left"></i> Back to List</a>
+            <a asp-action="Edit" asp-route-id="@Model.BookId" class="btn btn-warning btn-sm me-2"><i class="fa fa-edit"></i> Edit</a>
+            <a asp-action="Delete" asp-route-id="@Model.BookId" class="btn btn-danger btn-sm me-2"><i class="fa fa-trash"></i> Delete</a>
+        </div>
+    </div>
 </div>

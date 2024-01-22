@@ -259,3 +259,5 @@ D:\Practice For Github\CRUD Operation Using Stored Procedure\SP_CRUD\obj\Debug\n
 D:\Practice For Github\CRUD Operation Using Stored Procedure\SP_CRUD\obj\Debug\net8.0\SP_CRUD.pdb
 D:\Practice For Github\CRUD Operation Using Stored Procedure\SP_CRUD\obj\Debug\net8.0\SP_CRUD.genruntimeconfig.cache
 D:\Practice For Github\CRUD Operation Using Stored Procedure\SP_CRUD\obj\Debug\net8.0\ref\SP_CRUD.dll
+D:\Practice For Github\CRUD Operation Using Stored Procedure\SP_CRUD\obj\Debug\net8.0\SP_CRUD.sourcelink.json
+D:\Practice For Github\CRUD Operation Using Stored Procedure\SP_CRUD\bin\Debug\net8.0\libman.json
