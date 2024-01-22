@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SP_CRUD.props" />
+</Project>
